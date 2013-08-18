@@ -22,9 +22,8 @@ public class Tester {
 	 * @throws ReservedNameException 
 	 */
 	public static void main(String[] args) throws ReservedNameException {
-		MGraphicFunctionPlot graphic = new MGraphicFunctionPlot(-0.1,-0.1,0.4,0.4,0.02,0.05,false,true,true,true);
-		// TODO Auto-generated method stubMGraphicFunctionPlot graphic = new MGraphicFunctionPlot(-0.1,-0.1,0.4,0.4,0.02,0.05,false,true,true,true);
-		graphic.addMathFunction(new MathFunction(-0.1,-0.1,0.4,0.4, Color.green, Precision.VERY_HIGH,false){
+		MGraphicFunctionPlot graphic = new MGraphicFunctionPlot(-0.1,-0.1,1,1,0.02,0.05,false,true,true,true);
+		graphic.addMathFunction(new MathFunction(-1,1,-1,1, Color.green, Precision.MEDIUM,false){
 			@Override
 			public double calculateFunction(double... arg) {
 				System.out.println("hello");
@@ -35,8 +34,6 @@ public class Tester {
 			public String toString() {
 				return "g*e^(-2*g)";
 			}}, false);
-		
-		//graphic.addFunction(framesPerFrameTimeGroup);
 		JFrame show = new JFrame();
 		show.add(graphic);
 		show.setSize(500, 500);
