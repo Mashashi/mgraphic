@@ -1,8 +1,4 @@
 package mgraphic.functions;
-/**
- * 
- */
-
 
 /**
  * The exception that specifies a function name reservation violation.
