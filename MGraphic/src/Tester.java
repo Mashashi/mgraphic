@@ -8,10 +8,6 @@ import mgraphic.MGraphicFunctionPlot.Precision;
 import mgraphic.functions.ReservedNameException;
 
 /**
- * 
- */
-
-/**
  * @author Rafael Campos
  *
  */
