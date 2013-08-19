@@ -1,6 +1,3 @@
-/**
- * 
- */
 package mgraphic;
 
 import java.awt.Color;
@@ -399,7 +396,7 @@ public class MGraphic extends JComponent implements MouseMotionListener{
 		
 		super.paint(g);
 		
-		//Passa a ser unidades 10^unitPixiesX quando no gráfico de bode
+		//Passa a ser unidades 10^unitPixiesX quando no grï¿½fico de bode
 		int unitPixiesX = getUnitPixeisX(), unitPixiesY = getUnitPixeisY();
 		int axisHeight = -1, axisWidth = -1;
 		
@@ -430,7 +427,7 @@ public class MGraphic extends JComponent implements MouseMotionListener{
 		g.setColor(Color.BLACK);
 		g.setFont(new Font("Arial",Font.BOLD,16));
 		
-		//Desenhar coordenadas no ponto em que o rato está
+		//Desenhar coordenadas no ponto em que o rato estï¿½
 		if(mousePosition != null){
 			g.setFont(generalFont);
 			
@@ -720,13 +717,13 @@ public class MGraphic extends JComponent implements MouseMotionListener{
 	
 	/**
 	 * 
-	 * @return Se o eixo das abcissas está visível
+	 * @return Se o eixo das abcissas estï¿½ visï¿½vel
 	 */
 	protected boolean isXAxisVisible(){ return yMin<=0 && yMax>=0; }
 	
 	/**
 	 * 
-	 * @return Se o eixo das ordenadas está visível
+	 * @return Se o eixo das ordenadas estï¿½ visï¿½vel
 	 */
 	protected boolean isYAxisVisible(){ return xMin<=0 && xMax>=0; }
 	
@@ -829,7 +826,7 @@ public class MGraphic extends JComponent implements MouseMotionListener{
 			
 			WritableSheet sheet = workbook.createSheet(function.getName().length()<20?function.getName():function.getName().substring(0, 20).concat("..."), workbook.getNumberOfSheets()); 
 			
-			sheet.addCell(new Label(0, 0, "Nome da função"));
+			sheet.addCell(new Label(0, 0, "Nome da funï¿½ï¿½o"));
 			sheet.addCell(new Label(1, 0, function.getName()));
 			sheet.addCell(new Label(2, 0, "Cor (RGB)"));
 			sheet.addCell(new Label(3, 0, function.getColor().getRGB()+""));
